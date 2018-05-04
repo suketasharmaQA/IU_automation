@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.application.tests.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="login_to_portal"/>
+        </methods>
+      </class> <!-- com.application.tests.LoginTest -->
+      <class name="com.application.tests.LogoutTest">
+        <methods>
+          <include name="logout_to_portal"/>
+        </methods>
+      </class> <!-- com.application.tests.LogoutTest -->
+      <class name="com.application.tests.CampaignManageTest">
+        <methods>
+          <include name="CampaignManage_create_audience_all_fields"/>
+          <include name="CampaignManage_create_audience_ALL"/>
+        </methods>
+      </class> <!-- com.application.tests.CampaignManageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
