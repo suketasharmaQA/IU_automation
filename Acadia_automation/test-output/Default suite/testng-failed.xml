@@ -6,12 +6,15 @@
       <class name="com.application.tests.CampaignManageTest">
         <methods>
           <include name="CampaignManage_create_campaign"/>
-          <include name="setup"/>
-          <include name="quit"/>
           <include name="CampaignManage_create_audience_all_fields"/>
           <include name="CampaignManage_create_audience_ALL"/>
         </methods>
       </class> <!-- com.application.tests.CampaignManageTest -->
+      <class name="com.application.tests.LogoutTest">
+        <methods>
+          <include name="logout_to_portal"/>
+        </methods>
+      </class> <!-- com.application.tests.LogoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

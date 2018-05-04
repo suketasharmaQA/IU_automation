@@ -1,9 +1,9 @@
 
 .metadata/*
 .recommenders/*
-Acadia/.classpath
-Acadia/.project
-Acadia/bin/*
-Acadia/test-output/*
+Acadia_automation/.classpath
+Acadia_automation/.project
+Acadia_automation/bin/*
 data/links.xlsx
 test-output/*
+Acadia_automation/test-output/*
