@@ -3,10 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.application.tests.LoginTest"/>
+      <class name="com.application.tests.WebTable"/>
+     <!-- <class name="com.application.tests.LoginTest"/>
       <class name="com.application.tests.CreateCampaignTest"/>
       <class name="com.application.tests.LogoutTest"/>
-      <class name="com.application.tests.CampaignManageTest"/>
+      <class name="com.application.tests.CampaignManageTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

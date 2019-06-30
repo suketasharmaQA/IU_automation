@@ -27,7 +27,7 @@ public class ExcelLib
 	{
 		try
 		{
-			this.filepath = new FileInputStream("E:\\suketas stuff\\Automation\\Acadia Framework\\data\\data.xlsx");
+			this.filepath = new FileInputStream("G:\\Automation\\IU_automation\\data\\data.xlsx");
 			this.workbook = WorkbookFactory.create(filepath);
 			
 		}
@@ -48,10 +48,7 @@ public class ExcelLib
 			
 			e.printStackTrace();
 		}
-		catch (InvalidFormatException e){
-			
-			e.printStackTrace();
-		}	
+
 	}
 	
 	public String readFileData(String sheetname, int rowIndex, int cellIndex)
@@ -70,7 +67,7 @@ public class ExcelLib
 	}
 	
 	
-	public int getRowCount(String sheetName)
+	public int 	getRowCount (String sheetName)
 	{
 //		System.out.println("*****************************");
 //		System.out.println(s.getLastRowNum());

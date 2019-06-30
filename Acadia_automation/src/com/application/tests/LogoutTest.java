@@ -10,21 +10,16 @@ import org.testng.annotations.Test;
 import com.application.pages.LoginPage;
 import com.application.pages.LogoutPage;
 
-public class LogoutTest
-{
+public class LogoutTest {
 
-	@Test(priority=4)
-	public void logout_to_portal()
-	{
-		
+	@Test(priority = 4)
+	public void logout_to_portal() {
+
 		LogoutPage logoutPge = new LogoutPage(BaseClass.driver);
 		logoutPge.logout_activity();
 		BaseClass.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println("Asserting logout");
 		Assert.assertEquals("http://52.14.164.233/login", BaseClass.driver.getCurrentUrl());
 	}
-	
-	
-	
-	
+
 }

@@ -31,25 +31,22 @@ import org.openqa.selenium.support.ui.Select;
 import com.application.libraries.ExcelLib;
 
 @SuppressWarnings("all")
-public class Test_code 
-{
-	@FindBy(xpath="//input[@type='radio']")
+public class Test_code {
+	@FindBy(xpath = "//input[@type='radio']")
 	private List<WebElement> all_RadioButton;
-	
+
 	public static void main(String[] arg) throws IOException, InterruptedException
-	
+
 	{
 		WebDriver driver;
-		System.setProperty("webdriver.gecko.driver", "E:\\suketas stuff\\Automation\\Acadia Framework\\browserdrivers\\geckodriver-v0.20.0-win64\\geckodriver.exe");
-		driver = new FirefoxDriver();	
-		//driver.get("https://bushtruckleasing.com");
+		System.setProperty("webdriver.gecko.driver",
+				"E:\\suketas stuff\\Automation\\Acadia Framework\\browserdrivers\\geckodriver-v0.20.0-win64\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		// driver.get("https://bushtruckleasing.com");
 		driver.get("http://52.14.164.233/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-			
-				
-		
+
 //		Select dropdown = new Select(driver.findElement(By.xpath("//*[@name='dropdown']//*[@name='jumpMenu']")));
 //		List<WebElement> dd = dropdown.getOptions();
 //		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
@@ -143,11 +140,8 @@ public class Test_code
 //			
 //			//driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
 //		}
-		//
+	//
 
-	
-		
-		
 //		
 ////		String value = excel.readFileData("Campaigns", 2, 0);
 ////		System.out.println("value===="+value);
@@ -214,9 +208,5 @@ public class Test_code
 //		
 //	
 //	}
-	
-	
-	
 
 }
-	
